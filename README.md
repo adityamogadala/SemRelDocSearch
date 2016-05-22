@@ -10,6 +10,7 @@ Facilitate pairwise document comparison and related documents search using effic
 
 ## Installation Instructions
 
+1. `git clone https://github.com/adityamogadala/SemRelDocSearch.git`
 1. Code is written Java. Make sure that all required Java dependencies are installed.
 2. Setup an elasticsearch Index.
 	* Download elasticsearch and run
