@@ -1,6 +1,6 @@
 ## Purpose 
 
-Facilitate either long or short pairwise document comparison and related documents search using efficient graph-based approaches.
+Facilitate pairwise document comparison and related documents search using efficient graph-based approaches.
 
 ## Dependencies
 
@@ -20,7 +20,11 @@ Facilitate either long or short pairwise document comparison and related documen
 		* Tip-2: If necessary, reset with: DELETE docIndex and then create new index.
 3. [Pre-set DBPedia and Wiki Category Triplestores](). Keep it inside clone folder.
 
-## Use Cases
+## Get Started
+
+Below, we see how to use the code for document search and comparison.
+
+### Related Document Search
 
 1. Instantiate class SemExpRelDocSearch with 
 	* Path where document triple store (where expanded documents are stored) shall be put. Directory must exist!
@@ -33,11 +37,13 @@ Facilitate either long or short pairwise document comparison and related documen
 
 3. Bulk-expand and -load documents to collection
 	* Use method bulkAddDocuments
+
 		
-4. Pairwise Document Similarity (without constructing ElasticSearch/Lucene index for inverted-index-lookup - thus slow for related document search)
+### Pairwise Document Similarity 
+
+1. without constructing ElasticSearch/Lucene index for inverted-index-lookup - thus slow for related document search)
 	* Instantiate class SemanticallyExpandedDocScorer with expansion radius, edge directionality and combination mode for transversal and hierarchical scores (latter two can be null, default will be used)
 	* call score() method with two SemanticallyExpandedDocs, which can be a) created out of simple AnnotatedDocs (slower) or b) loaded from document triple store, in case they belong to a collection that has been constructed using the steps explained above for Related Document Search (faster)
-
 
 ## Citation
 
