@@ -18,7 +18,7 @@ Facilitate pairwise document comparison and related documents search using effic
 	* Enter text from "elasticSearch\_index.txt" file to create a new index. If desired, customize index name (default: docIndex) and document type name (default: news))
 		* Tip-1: For large collections, increase the shard count (e.g. 5).
 		* Tip-2: If necessary, reset with: DELETE docIndex and then create new index.
-3. [Pre-set DBPedia and Wiki Category Triplestores](). Keep it inside clone folder.
+3. Download [Pre-set DBPedia and Wiki Category Triplestores](http://people.aifb.kit.edu/amo/eswc2016/data/triple_data.7z). Keep it inside clone folder.
 
 ## Get Started
 
