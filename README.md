@@ -33,7 +33,7 @@ Below, we see how to use the code for document search and comparison.
 	* Candidate Set Size: defines how many candidate documents Pre-Search returns for closer similarity computation in Full Search step. Default: 20 (can be increased)
 
 2. Find related documents for a new document (which will be added to the collection in the process)
-	* Call method `getRelatedDocuments` with query document as document enriched with `AnnotatedDoc`.
+	* Call method `getRelatedDocuments` with a query document enriched with annotations using class `AnnotatedDoc`.
 
 3. Tip: To add document collection at once.
 	* Use method `bulkAddDocuments`.
